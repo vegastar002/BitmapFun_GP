@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/silde_menu_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/category_title_bar_main" />
+
+    <GridView
+        android:id="@+id/po_gridView"
+        style="@style/PhotoGridLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:columnWidth="100dp"
+        android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:stretchMode="spacingWidth"
+        android:verticalSpacing="@dimen/image_thumbnail_spacing" >
+    </GridView>
+
+</LinearLayout>

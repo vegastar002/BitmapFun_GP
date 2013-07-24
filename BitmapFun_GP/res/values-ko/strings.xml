@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">섹시한 CuteGirl갤러리</string>
+    <string name="clear_cache_menu">이미지캐시 삭제하기</string>
+    <string name="clear_cache_complete">캐시가 삭제 되었습니다</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="category_1">category1</string>
+    <string name="category_2">category2</string>
+    <string name="sub_download">다운</string>
+    <string name="sub_share">나누기</string>
+    <string name="sub_wallpaper">배경화면</string>
+    <string name="sub_gallery">갤러리</string>
+    <string name="set_wallpaper_ok">배경화면 설정 완료</string>
+    <string name="sub_download_ok">SD\HoneyGirl 디렉터리에 저장되었습니다 ！</string>
+    <string name="sub_download_again">파일이 이미 존재합니다</string>
+    <string name="str_again_exit">다시 한번 클릭하고 취소하세요</string>
+    <string name="category_more">더 보기</string>
+    <string name="alertDialog_cleaned">삭제 완료</string>
+    <string name="alertDialog_msg">"현재 캐시의 크기는 <xliff:g id="NAME">%s</xliff:g>，캐시를 제거 하시겠습니까？"</string>
+    
+    <string name="more_clear">이미지캐시를 삭제</string>
+    <string name="more_rate">좋은 평판</string>
+    <string name="more_feedback">피드백과 건의</string>
+    <string name="more_recommend">응용추천</string>
+    <string name="more_share">본 소프트웨어를 함께 나누기</string>
+    <string name="more_version">버전정보</string>
+    <string name="more_about">About</string>
+    <string name="exit_rate_content">이 앱을 다운로드 해 주셔서 감사합니다, 우리에게 5 성급를 제공하시기 바랍니다, 감사합니다</string>
+    <string name="exit_rate_title">를 사용하여 지원 해 주셔서 감사합니다</string>
+    
+    <!-- 未翻译 -->
+    <string name="share_msg">"오늘 매우 훌륭한 온라인 플러그인 소프트웨어를 찾았는데 내용이 다양하고 다량의 이미지가 있네요. 다운 받을 주소：<xliff:g id="NAME">%s</xliff:g>，빨리 보러 갑시다！"</string>
+    <string name="share_subject">추천</string>
+    <string name="notifi_uptext">버전 업데이트</string>
+    <string name="splash_disconnect">네트워크 접속 에러, 취소 완료</string>
+    <string name="notifi_downtext"><xliff:g id="NAME">%s</xliff:g> 최신번전이 있습니다</string>
+    <string name="about_content">사용자에게 더욱 좋은 시각적 체험을 제공하기 위하여 본 소프트웨어의 이미지는 전부 본 작가가 열심히 선택한 것입니다. 그리고 사용자에게 고화질, 무료, 다량, 배경화면 급 아름다운 이미지를 제공해 드립니다. 그런데 현재는 작가 혼자서 본 소프트웨어를 관리하다 보니 퇴근한 후에 제한적인 시간 내에 소프트웨어 개발과 관리를 해야 하고 늘 밤 늦게까지 작업하는 외에 서버 임대도 해야 하고, 이미지를 계속 선출해야 하며, 소프트웨어를 계속 업그레이드 시켜 완벽함을 추구하는 취지에서 제한된 광고가 들어가 있는데 대해 이해 해 주시고 계속 지원해 주시면 감사하겠습니다!</string>
+    <string name="logo_text">Take time to indulge</string>
+    <string name="main_pigu">궁둥이</string>
+    <string name="main_leg">다리</string>
+    
+    <string name="soft_update_title">소프트웨어 업데이트</string>
+    <string name="detail_title_text">자세히</string>
+    <string name="soft_update_info">최신버전이 있습니다. 업데이트를 지금 진행하시겠습니까</string>
+    <string name="soft_update_updatebtn">업데이트</string>
+    <string name="soft_update_later">잠시 후 업데이트 실행</string>
+    <string name="soft_updating">업데이트 중입니다</string>
+    <string name="soft_update_no">현재 버전이 이미 최신버전입니다</string>
+
+</resources>

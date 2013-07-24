@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dip"
+    android:background="@drawable/maintab_toolbar_bg2"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/category_add_category"
+        android:layout_width="@dimen/category_control_widht"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tab_icon_back"
+        style="@style/TabButtonStyle_transparent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/sidebar_title_vertical_divider" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:text=""
+        android:layout_weight="1.0"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/sidebar_title_vertical_divider" />
+    
+    <ImageButton
+        android:id="@+id/category_finish"
+        android:layout_width="@dimen/category_control_widht"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_tab_bg_transparent"
+        android:src="@drawable/new_version" />
+
+</LinearLayout>

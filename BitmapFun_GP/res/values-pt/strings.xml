@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Sexy Girl HD</string>
+    <string name="app_dir">HoneyGirl</string>
+    <string name="clear_cache_menu">Limpa do cache de imagem</string>
+    <string name="clear_cache_complete">Cache foi esvaziada</string>
+    <string name="category_1">category1</string>
+    <string name="category_2">category2</string>
+    <string name="sub_download">Download</string>
+    <string name="sub_share">Ação</string>
+    <string name="sub_wallpaper">Definir como papel de parede</string>
+    <string name="sub_gallery">Galeria</string>
+    <string name="set_wallpaper_ok">Wallpaper definida com sucesso</string>
+    <string name="sub_download_ok">Salvo no diretório sdcard/HoneyGirl！</string>
+    <string name="sub_download_again">O arquivo já existe</string>
+    <string name="str_again_exit">Pressione novamente para sair</string>
+    <string name="category_more">Mais</string>
+    <string name="alertDialog_cleaned">Foi esvaziado</string>
+    <string name="alertDialog_msg">"Tamanho do cache atual é <xliff:g id="NAME">%s</xliff:g>, Tem certeza de que deseja esvaziar de cache?"</string>
+    <string name="detail_title_text">Detalhada</string>
+    
+    
+    <string name="more_clear">Limpa do cache de imagem</string>
+    <string name="more_rate">Comentário favorável</string>
+    <string name="more_feedback">Feedback e sugestões</string>
+    <string name="more_recommend">Aplicações Recomendado</string>
+    <string name="more_share">Compartilhe este software</string>
+    <string name="more_version">Informações são sobre a versão</string>
+    <string name="more_about">Sobre</string>
+    <string name="exit_rate_content">Obrigado por baixar este aplicativo, por favor, dê-nos 5 estrelas, obrigado</string>
+    <string name="exit_rate_title">Obrigado usar e apoiá-lo</string>
+    
+    
+    <string name="share_msg">"Hoje encontrei um software de gráficos grande online,conteúdo rico imagens enormes,endereço de download: <xliff:g id="NAME">%s</xliff:g>，Vá e veja rapidamente ！"</string>
+    <string name="share_subject">Recomenda</string>
+    <string name="notifi_uptext">Actualizar versão</string>
+    <string name="splash_disconnect">A conexão de rede é anormal e saiu</string>
+    <string name="notifi_downtext"><xliff:g id="NAME">%s</xliff:g> Tem sido detectada a última versão</string>
+    <string name="about_content">Para lhe dar uma melhor experiência visual, cada imagem do software são de cuidadosamente selecionados, para oferecer alta definição para o seu livre, o maciço, nível Wallpaper Mito. Uma vez que existem apenas de uma pessoa para manter o software, portanto, depois do trabalho usa tempo limitado para completar o desenvolvimento e manutenção de software, costuma trabalhar até tarde da noite, mas também precisa alugar um servidor e selecione imagens contínuado.E atualizar o software para torná-lo mais refinado, por isso, permitir publicidade limitada, e obrigado por seu apoio e compreensão!</string>
+    <string name="logo_text">Take time to indulge</string>
+    <string name="main_pigu">bunda</string>
+    <string name="main_leg">perna</string>
+    
+    <string name="soft_update_title">Atualizar o software</string>
+    <string name="soft_update_info">A nova versão é detectado, Atualiza imediatamente?</string>
+    <string name="soft_update_updatebtn">Atualiza</string>
+    <string name="soft_update_later">Atualiza mais tarde</string>
+    <string name="soft_updating">Sendo atualizado</string>
+    <string name="soft_update_no">A versão atual já está última.</string>
+    
+
+</resources>

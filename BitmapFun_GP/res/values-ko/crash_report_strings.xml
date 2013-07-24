@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="crash_report_btn_report">Report</string>
+    <string name="crash_report_btn_exit">Exit</string>
+    <string name="crash_report_email_subject" formatted="false">%s Crash Report %s</string>
+    <string name="crash_report_email_text">Please write your comment below :\n</string>
+    <string name="crash_report_dialog_title">Application has crashed</string>
+    <string name="crash_report_dialog_text">프로그램에 미지의 오류가 발생하였습니다. \'Report\'를 클릭하여 오류정보를 보내시면 프로그램 개선에 도움이 될 수 있습니다.</string>
+    <string name="report_email">energon8809@gmail.com</string>
+
+</resources>

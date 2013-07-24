@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+v2.6(第8个版本)
+    1.使用云数据库得到XML地址
+    2.增加sex position功能
+v2.5(第7个版本)
+    1.图片来源修改为taobao，不再使用aliyun
+    
+v2.4(第6个版本)
+    1.最小版本要求降为7
+    2.添加极光推送
+    3.去掉boot启动service监控新版本，改为极光推送升级消息。保留软件启动时start service监控
+
+v2.3 
+    1.升级方式变为点击notification后直接下载，不再跳转到主界面
+      
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.free.hardcore.wp9"
+    android:versionCode="10"
+    android:versionName="2.8" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <permission
+        android:name="com.free.hardcore.wp9.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    
+    <uses-permission android:name="com.free.hardcore.wp9.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>  
+    
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    
+    <!-- 酷仔需要添加的软件权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- end -->
+    
+
+<!-- android:name="com.android.hardcore.crashreport.ApplicationCore" -->
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.android.hardcore.crashreport.ApplicationCore"
+        android:theme="@android:style/Theme.NoTitleBar"
+        >
+        
+        <activity
+            android:name="com.android.hardcore.crashreport.CrashReportDialogActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        
+        <!-- 极光推送 -->
+        <activity android:name="com.example.jpushdemo.PushSetActivity" android:label="@string/app_name"></activity>
+        <activity android:name="com.example.jpushdemo.SettingActivity" android:label="@string/app_name"></activity>
+        <activity android:name="com.example.jpushdemo.TestActivity" >   </activity>
+        
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.free.hardcore.wp9" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.example.ui.bopoType" android:screenOrientation="portrait"/>
+        
+        
+        
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+                
+            </intent-filter>
+        </service>
+        
+        
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+             <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.free.hardcore.wp9" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+             <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+   
+        </receiver>
+        
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="8e51aea448a032c299297d8f" /> <!--  </>值来自开发者平台取得的AppKey-->
+        <!-- 极光推送 -->
+        
+        
+        
+        <activity
+            android:name="com.example.ui.notifyActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        
+        <activity
+            android:name="com.example.ui.ImageDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.example.ui.TabMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.android.view.leg.ImageDetailActivityLeg"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        
+        <service android:name="com.example.ui.looktimeService"></service>
+        
+        <activity
+            android:name="com.example.ui.MoreActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.example.ui.aboutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        
+        <activity
+            android:name="com.example.ui.ImageGridActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- ImageGridActivity -->
+        <activity
+            android:name="com.example.ui.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name="com.example.ui.newVersionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- Start airpush -->
+        <meta-data
+            android:name="com.grbmzbvus.vwbdizdju129465.APPID"
+            android:value="98208" />
+        <meta-data
+            android:name="com.grbmzbvus.vwbdizdju129465.APIKEY"
+            android:value="apikey*1357312099129465969" />
+
+        <activity
+            android:name="com.grbmzbvus.vwbdizdju129465.SmartWallActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.grbmzbvus.vwbdizdju129465.BrowserActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <service
+            android:name="com.grbmzbvus.vwbdizdju129465.PushService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.grbmzbvus.vwbdizdju129465.BootReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <!-- End of Airpush -->
+        
+        <!-- 万普  start-->
+        <activity android:name="cn.waps.OffersWebView" android:configChanges="keyboardHidden|orientation" />
+        <meta-data android:name="APP_ID" android:value="2b6e22f64263f15952d0bcb21382aab1" />
+        <meta-data android:name="APP_PID" android:value="google" />
+        <!-- 万普   end-->
+
+
+        
+        <!-- here for tapjoy-->
+        <activity android:name="com.tapjoy.TJCOffersWebView" android:configChanges="keyboardHidden|orientation" />
+		<activity android:name="com.tapjoy.TapjoyFullScreenAdWebView" android:configChanges="keyboardHidden|orientation" />
+		<activity android:name="com.tapjoy.TapjoyDailyRewardAdWebView" android:configChanges="keyboardHidden|orientation" />
+		<activity android:name="com.tapjoy.TapjoyVideoView" android:configChanges="keyboardHidden|orientation" />
+        
+		<!-- here for inmobi-->
+		<activity android:name="com.inmobi.androidsdk.IMBrowserActivity"
+			android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize" />
+        
+		<!-- here for admob-->
+		<activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+    </application>
+
+</manifest>

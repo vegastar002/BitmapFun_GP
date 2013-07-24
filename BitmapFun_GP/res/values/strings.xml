@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Sexy Grid HD</string>
+    <string name="app_dir">HoneyGirl</string>
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete">Caches have been cleared</string>
+    <string name="category_1">category1</string>
+    <string name="category_2">category2</string>
+    <string name="sub_download">download</string>
+    <string name="sub_share">share</string>
+    <string name="sub_wallpaper">set as wallpaper</string>
+    <string name="sub_gallery">gallery</string>
+    <string name="set_wallpaper_ok">wallpaper set successful</string>
+    <string name="sub_download_ok">saved to sdcard/HoneyGirl！</string>
+    <string name="sub_download_again">file already exist.</string>
+    <string name="str_again_exit">Press again to exit</string>
+    <string name="category_more">More</string>
+    <string name="alertDialog_cleaned">Clear cache</string>
+    <string name="alertDialog_msg">"the cache size is <xliff:g id="NAME">%s</xliff:g>, sure to be cleaned?"</string>
+    <string name="detail_title_text">Detail</string>
+    <string name="exit_rate_content">Thank you for download this app, please give us 5 star, thank you</string>
+    <string name="exit_rate_title">Thank you use and support it</string>
+    <string name="position_title">Sex Position</string>   
+    
+    <string name="more_clear">clear cache</string>
+    <string name="more_rate">rate </string>
+    <string name="more_feedback">feedback or suggest</string>
+    <string name="more_recommend">recommend app</string>
+    <string name="more_share">share this app</string>
+    <string name="more_version">version</string>
+    <string name="more_about">about</string>
+    
+    
+    <string name="share_msg">"Today a great online charting software was found. It contains content-rich pictures. Download address:：<xliff:g id="NAME">%s</xliff:g>，quickly go and see！"</string>
+    <string name="share_subject">recommend</string>
+    <string name="notifi_uptext">update version</string>
+    <string name="splash_disconnect">network disconnected, exited.</string>
+    <string name="notifi_downtext"><xliff:g id="NAME">%s</xliff:g> find new version</string>
+    <string name="about_content">To give you a better visual experience, every single picture of the software is carefully selected, providing high-definition, free, and massive wallpaper level pictures. Since just the designer maintain the  usage of the software, only limited time for him to complete software development and maintenance after day work. The designer not only works late into night, but also needs to rent a server to make continuous selections of the pictures and to update the software to make it more refined. Therefore, please allow a few advertisements. 
+        Thank you for your support and understanding!</string>
+    <string name="logo_text">Take time to indulge</string>
+    <string name="main_pigu">rounded</string>
+    <string name="main_leg">leggy</string>
+    <string name="main_position">position</string>
+    
+    <string name="soft_update_title">Update</string>
+    <string name="soft_update_info">Find the lastest version, upgrade now?</string>
+    <string name="soft_update_updatebtn">update</string>
+    <string name="soft_update_later">later</string>
+    <string name="soft_updating">updating</string>
+    <string name="soft_update_no">This version is the lastest.</string>
+    
+
+</resources>

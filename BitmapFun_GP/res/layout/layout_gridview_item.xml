@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal" >
+
+    <ImageView
+            android:id="@+id/imageView_ItemImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/empty_photo" >
+        </ImageView>
+        
+    <Button
+        android:id="@+id/show_number_bt"
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+        />
+        
+<!--     <FrameLayout -->
+<!--         android:id="@+id/frame_layout1" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:layout_marginLeft="0dp" -->
+<!--         android:background="@android:color/transparent" > -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/imageView_ItemImage" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:scaleType="centerCrop" -->
+<!--             android:background="@drawable/empty_photo" > -->
+<!--         </ImageView> -->
+
+<!--         <Button -->
+<!--             android:id="@+id/show_number_bt" -->
+<!--             android:layout_width="30dp" -->
+<!--             android:layout_height="20dp" -->
+<!--             android:layout_gravity="bottom|right" -->
+<!--             android:clickable="false" -->
+<!--             android:focusable="false" -->
+<!--             android:text="1" -->
+<!--             android:paddingBottom="4dp" -->
+<!--             android:textColor="@color/white" -->
+<!--             android:textSize="10sp" /> -->
+<!--     </FrameLayout> -->
+
+</RelativeLayout>

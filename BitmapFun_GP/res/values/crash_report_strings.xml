@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="crash_report_btn_report">Report</string>
+    <string name="crash_report_btn_exit">Exit</string>
+    <string name="crash_report_email_subject" formatted="false">%s Crash Report %s</string>
+    <string name="crash_report_email_text">Please write your comment below :\n</string>
+    <string name="crash_report_dialog_title">Application has crashed</string>
+    <string name="crash_report_dialog_text">An unexpected error occurred forcing the
+        application to stop. Please help us fix this by sending us error data,
+        all you have to do is click \'Report\'.</string>
+    <string name="report_email">energon8809@gmail.com</string>
+
+</resources>

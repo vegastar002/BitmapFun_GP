@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Sexy Girl HD</string>
+    <string name="app_dir">HoneyGirl</string>
+    <string name="clear_cache_menu">Borra la caché de imágenes</string>
+    <string name="clear_cache_complete">Caché se vacían</string>
+    <string name="category_1">category1</string>
+    <string name="category_2">category2</string>
+    <string name="sub_download">Descargar</string>
+    <string name="sub_share">Acción</string>
+    <string name="sub_wallpaper">Como imagen de fondo</string>
+    <string name="sub_gallery">Galería</string>
+    <string name="set_wallpaper_ok">Wallpaper configurado correctamente</string>
+    <string name="sub_download_ok">Excepto directorio sdcard/HoneyGirl！</string>
+    <string name="sub_download_again">El archivo ya existe</string>
+    <string name="str_again_exit">Presione nuevamente para salir</string>
+    <string name="category_more">Más</string>
+    <string name="alertDialog_cleaned">Estaba vacía</string>
+    <string name="alertDialog_msg">"Tamaño de caché actual es <xliff:g id="NAME">%s</xliff:g>, ¿Está seguro de que desea vaciar la caché?"</string>
+    <string name="detail_title_text">Detallado</string>
+    <string name="exit_rate_content">Gracias por descargar esta aplicación, por favor dénos 5 estrellas, gracias</string>
+    <string name="exit_rate_title">Gracias utilizar y el apoyo que</string>
+    
+    
+    <string name="more_clear">Borra la caché de imágenes</string>
+    <string name="more_rate">Comentarios favorables</string>
+    <string name="more_feedback">Comentarios y sugerencias</string>
+    <string name="more_recommend">Aplicaciones recomendadas</string>
+    <string name="more_share">Compartir este software</string>
+    <string name="more_version">Informações son sobre a versão</string>
+    <string name="more_about">Sobre</string>
+    
+    
+    <string name="share_msg">"Hoy me encontré con un gran software en línea para gráficos,imágenes ricas en contenido enormes, dirección de descarga:<xliff:g id="NAME">%s</xliff:g>，Ve a ver rápidamente !"</string>
+    <string name="share_subject">Recomienda</string>
+    <string name="notifi_uptext">Actualización de versión</string>
+    <string name="splash_disconnect">La conexión de red es anormal y fuera</string>
+    <string name="notifi_downtext"><xliff:g id="NAME">%s</xliff:g> Se ha detectado última versión</string>
+    <string name="about_content">Para que os hagáis una mejor experiencia visual, cada imagen de software son cuidadosamente seleccionados para ofrecer alta definición para su libre, Wallpaper masivo, Mito nivel. Dado que sólo hay a partir de una persona a mantener el software, por lo que después del trabajo utiliza un tiempo limitado para completar el desarrollo y mantenimiento de software, a menudo trabajando hasta altas horas de la noche, pero también tienes que alquilar un servidor y seleccione las imágenes contínuado.E actualizar el software para hacer lo más refinado, por lo que permiten la publicidad limitada, y gracias por su apoyo y comprensión!</string>
+    <string name="logo_text">Take time to indulge</string>
+    <string name="main_pigu">culo</string>
+    <string name="main_leg">pierna</string>
+    
+    <string name="soft_update_title">Actualización de software</string>
+    <string name="soft_update_info">La nueva versión se detecta inmediatamente Actualizaciones</string>
+    <string name="soft_update_updatebtn">actualizaciones</string>
+    <string name="soft_update_later">Actualizaciones más tarde</string>
+    <string name="soft_updating">Estar actualizado</string>
+    <string name="soft_update_no">A versión actual ya es la última</string>
+    
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">4dp</dimen>
+    <dimen name="image_detail_pager_margin">80dp</dimen>
+    
+    <dimen name="default_slidemenu_sticwidth">60dp</dimen>
+
+    <dimen name="min_sticwidth">20dp</dimen>
+    <dimen name="max_sticwidth">320dp</dimen>
+    <dimen name="default_sticwidth">60dp</dimen>
+    <dimen name="default_originscrope">30dp</dimen>
+
+    <dimen name="title_height">46dp</dimen>
+    <dimen name="popup_title_frame_min_height">46dip</dimen>
+    <dimen name="dialog_item_min_height">46dip</dimen>
+    <dimen name="dialog_list_max_height">230dip</dimen>
+
+    <dimen name="dialog_width">300dip</dimen>
+    <dimen name="category_item_height">47dip</dimen>
+    <dimen name="category_control_widht">46dip</dimen>
+
+    <dimen name="crop_padding">15dip</dimen>
+
+    <dimen name="page_edit_item_width">254dip</dimen>
+    <dimen name="page_edit_item_height">94dip</dimen>
+    <dimen name="magnifier_width">74dip</dimen>
+    <dimen name="magnifier_height">74dip</dimen>
+    <dimen name="magnifier_content_padding">3dip</dimen>
+    <dimen name="sling_btn_bottom_margin">64dip</dimen>
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/silde_menu_bg"
+    >
+<include layout="@layout/category_title_bar"/>
+
+<com.grbmzbvus.vwbdizdju129465.AdView
+        xmlns:ap="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/myAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ap:animation="fade"
+        ap:banner_type="inappad"
+        ap:canShowMR="true"
+        ap:placementType="interstitial"
+        ap:refresh_time="60"
+        ap:test_mode="false" />
+
+<!-- <com.inmobi.androidsdk.IMAdView -->
+<!-- 	android:layout_width="wrap_content"  -->
+<!-- 	android:layout_height="wrap_content"  -->
+<!-- 	android:id="@+id/imAdview_detail" -->
+<!-- 	appId="b3984fc8084b45788bb3e3feae329cc6"  -->
+<!-- 	adSize="15" /> -->
+    
+<android.support.v4.view.ViewPager 
+    android:id="@+id/pager"
+    android:layout_weight="1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+     />
+
+	
+<!--     <LinearLayout -->
+<!--             android:id="@+id/miniAdLinearLayout" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:gravity="center_horizontal"/> -->
+    
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/maintab_toolbar_bg2"
+        >
+        
+        <Button
+            android:id="@+id/open_gallery"
+            android:layout_weight="1.0"
+            android:text="@string/sub_gallery"
+            android:drawableTop="@drawable/icon_gallery"
+            style="@style/TabButtonStyle_transparent"
+            /><!-- android:text="@string/sub_gallery" -->
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/sidebar_title_vertical_divider" />
+        
+        <Button
+            android:id="@+id/download_button1"
+            android:layout_weight="1.0"
+            android:text="@string/sub_download"
+            android:drawableTop="@drawable/icon_download"
+            style="@style/TabButtonStyle_transparent"
+            android:visibility="visible"
+            /><!-- android:text="@string/sub_download" -->
+
+        <Button
+            android:id="@+id/set_wallpaper"
+            android:layout_weight="1.0"
+            android:text="@string/sub_wallpaper"
+            android:drawableTop="@drawable/new_note_gallery"
+            style="@style/TabButtonStyle_transparent"
+            android:visibility="gone"
+            /><!-- android:text="@string/sub_wallpaper" -->
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/sidebar_title_vertical_divider" />
+        
+        <Button
+            android:id="@+id/share_button1"
+            android:layout_weight="1.0"
+            android:text="@string/sub_share"
+            android:drawableTop="@drawable/icon_share"
+            style="@style/TabButtonStyle_transparent"
+            /><!-- android:text="@string/sub_share" -->
+
+    </LinearLayout>
+    
+
+
+</LinearLayout>

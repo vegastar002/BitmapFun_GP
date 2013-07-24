@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="app_name">美丽格 HD</string>
+    <string name="clear_cache_menu">清除圖像緩存</string>
+    <string name="clear_cache_complete">緩存資料已刪除</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="category_1">分類1</string>
+    <string name="category_2">分類2</string>
+    <string name="sub_download">下載</string>
+    <string name="sub_share">分享</string>
+    <string name="sub_wallpaper">設為壁紙</string>
+    <string name="sub_gallery">圖庫</string>
+    <string name="set_wallpaper_ok">壁紙設置成功</string>
+    <string name="sub_download_ok">已保存到SD卡HoneyGirl目錄下！</string>
+    <string name="sub_download_again">文件已存在</string>
+    <string name="str_again_exit">再次按下退出</string>
+    <string name="category_more">更多</string>
+    <string name="alertDialog_cleaned">已清空</string>
+    <string name="alertDialog_msg">"當前緩存大小為<xliff:g id="NAME">%s</xliff:g>，確定要清空緩存嗎？"</string>
+    
+    <string name="more_clear">清除圖片緩存</string>
+    <string name="more_rate">親，記得給好評哦</string>
+    <string name="more_feedback">回饋和建議</string>
+    <string name="more_recommend">應用推薦</string>
+    <string name="more_share">分享本軟體</string>
+    <string name="more_version">版本資訊</string>
+    <string name="more_about">關於</string>
+    <string name="exit_rate_content">感謝您下載此應用，請給我5星好評，謝謝您</string>
+    <string name="exit_rate_title">感謝您的使用</string>
+    <string name="position_title">性愛姿勢</string>
+    
+    <string name="share_msg">"今天發現了一個非常棒的線上看圖軟體，美女們豐滿的屁股，白白的大腿，都是男人的最愛，下載位址：<xliff:g id="NAME">%s</xliff:g>，趕緊去看看吧！"</string>
+    <string name="share_subject">推薦一款美女看圖軟體</string>
+    <string name="notifi_uptext">版本更新</string>
+    <string name="splash_disconnect">網路連接異常，已退出</string>
+    <string name="notifi_downtext"><xliff:g id="NAME">%s</xliff:g> 檢測到最新版本</string>
+    <string name="about_content">為了讓您有更好的視覺體驗，本軟體的每一張圖片都是作者精心挑選出來的，為您提供高清，免費，海量，壁紙級別的美圖。由於現在只有
+作者一個人來維護本軟體，所以只能在下班後的有限時間內完成軟體的開發和維護，經常工作到晚上很晚，還要需要租用伺服器並不斷的甄選圖片，
+以及更新軟體以使它更加精緻，所以請允許存在有限的廣告(僅存在于應用內，不發通知欄及推送廣告)，感謝您的支持和理解！</string>
+    <string name="logo_text">有了重口味的你 怎能少了小清新的我</string>
+    <string name="main_pigu">美臀</string>
+    <string name="main_leg">美腿</string>
+    <string name="main_position">姿势</string>
+    
+    <string name="soft_update_title">軟體更新</string>
+    <string name="detail_title_text">詳細</string>
+    <string name="soft_update_info">檢測到新版本，立即更新嗎？</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍後更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_no">當前版本已經是最新</string>
+    
+</resources>

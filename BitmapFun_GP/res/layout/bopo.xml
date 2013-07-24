@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gif="http://schemas.android.com/apk/res/org.android.view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/category_title_bar" />
+
+    <com.grbmzbvus.vwbdizdju129465.AdView
+        xmlns:ap="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/myAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ap:animation="fade"
+        ap:banner_type="inappad"
+        ap:canShowMR="true"
+        ap:placementType="interstitial"
+        ap:refresh_time="60"
+        ap:test_mode="false" />
+
+    <Button
+        android:id="@+id/left_array"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/wap_prev" />
+
+    <com.szy.update.TypegifView
+        xmlns:gif="http://schemas.android.com/apk/res/com.free.hardcore.wp9"
+        android:id="@+id/givi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        gif:src="@raw/kitty" />
+
+    <Button
+        android:id="@+id/right_array"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/wap_next" />
+
+</LinearLayout>

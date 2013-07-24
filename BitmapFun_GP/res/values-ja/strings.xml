@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">スーパーセクシーな女性 HD</string>
+    <string name="app_dir">HoneyGirl</string>
+    <string name="clear_cache_menu">画像のキャッシュをクリアする</string>
+    <string name="clear_cache_complete">キャッシュがクリアされた</string>
+    <string name="category_1">category1</string>
+    <string name="category_2">category2</string>
+    <string name="sub_download">ダウンロードする</string>
+    <string name="sub_share">シャアする</string>
+    <string name="sub_wallpaper">壁紙を設定する</string>
+    <string name="sub_gallery">絵庫</string>
+    <string name="set_wallpaper_ok">壁紙に設定した</string>
+    <string name="sub_download_ok">sdcard/HoneyGirl ディレクトリに保存済み！</string>
+    <string name="sub_download_again">ファイルが既に存在している.</string>
+    <string name="str_again_exit">再び押してログアウトする</string>
+    <string name="category_more">更に</string>
+    <string name="alertDialog_cleaned">クリアした</string>
+    <string name="alertDialog_msg">"カレントキャッシュのサイズ <xliff:g id="NAME">%s</xliff:g>, キャッシュをクリアしますか?"</string>
+    <string name="detail_title_text">詳細</string>
+    <string name="exit_rate_content">このアプリをダウンロードしていただきありがとうございます、私たちの5つ星を与えてください、あなたに感謝</string>
+    <string name="exit_rate_title">それを使用して、サポートありがとうございました</string>
+    
+    
+    <string name="more_clear">画像のキャッシュをクリアする</string>
+    <string name="more_rate">好評 </string>
+    <string name="more_feedback">フィードバックとアドバイス</string>
+    <string name="more_recommend">応用のお薦め</string>
+    <string name="more_share">本ソフトをシェアする</string>
+    <string name="more_version">バージョン情報</string>
+    <string name="more_about">詳しい説明</string>
+    
+    
+    <string name="share_msg">"今日は素晴らしいオンライン画像ブラウズソフトを見つけました。内容に富んでいて、画像がたくさんシェアされています。ダウンロードのアドレスは下記となります：<xliff:g id="NAME">%s</xliff:g>，早速リンクして見てみましょう！"</string>
+    <string name="share_subject">お薦め</string>
+    <string name="notifi_uptext">バージョンの更新</string>
+    <string name="splash_disconnect">ネットの状況が悪くてログアウトした.</string>
+    <string name="notifi_downtext"><xliff:g id="NAME">%s</xliff:g> 最新のバージョンが検出された。</string>
+    <string name="about_content">貴方により良い視覚体験を覚えさせるために、作者は心を込めて本ソフトの全ての画像を一々選択し、ＨＤで、多量な壁紙のような美しい画像を無料に提供しています。しかし、目下、作者一人で本ソフトをメンテナンスするので、退勤後のわずかの時間内でソフトの開発からメンテナンスまで、よく夜遅くまで仕事しています。そして、サーバを借りることや、絶えずに画像を選択すること、さらにソフトを更新し、完善するために、まだまだ力が必要だと思いますので、ここで少量の広告が入ることについて、どうかご許し、ご理解ください！</string>
+    <string name="logo_text">Take time to indulge</string>
+    <string name="main_pigu">尻</string>
+    <string name="main_leg">脚</string>
+    
+    <string name="soft_update_title">ソフトの更新</string>
+    <string name="soft_update_info">最新のバージョンが検出されましたが、すぐに更新しますか。</string>
+    <string name="soft_update_updatebtn">更新する</string>
+    <string name="soft_update_later">後で更新する</string>
+    <string name="soft_updating">更新している</string>
+    <string name="soft_update_no">カレントバージョンは既に最新版です。</string>
+    
+
+</resources>

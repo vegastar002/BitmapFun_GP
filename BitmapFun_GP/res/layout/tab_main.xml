@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/silde_menu_bg"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <LinearLayout
+	        android:id="@+id/AdLinearLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center_horizontal"/>
+        
+        
+        <RadioGroup
+            android:id="@+id/main_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/maintab_toolbar_bg2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/main_pigu"
+                android:layout_weight="1.0"
+                android:background="@drawable/category_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/qingse"
+                android:checked="true"
+                android:paddingTop="1dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/main_pigu" />
+            
+            <RadioButton
+                android:id="@+id/leg"
+                android:layout_weight="1.0"
+                android:background="@drawable/category_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/orkut_01"
+                android:paddingTop="1dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/main_leg" />
+            
+            
+            <RadioButton
+                android:id="@+id/position"
+                android:layout_weight="1.0"
+                android:background="@drawable/category_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/dashboard_01"
+                android:paddingTop="1dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/main_position" />
+            
+            <RadioButton
+                android:id="@+id/more"
+                android:layout_weight="1.0"
+                android:background="@drawable/category_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/menu_more"
+                android:paddingTop="1dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/category_more" />
+            
+            
+        </RadioGroup>
+
+    </LinearLayout>
+
+</TabHost>
